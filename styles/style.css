@@ -69,18 +69,19 @@
 }
 /* content styles */
 .content {
-  /* border: 8px solid black; */
+  border: 8px solid black;
 }
 /* description styles */
 .description {
   display: flex;
   justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .two-columns {
   display: flex;
   justify-content: space-between;
   width: 80%;
-  margin: 100px 0;
 }
 .two-columns__brief {
   color: #2f80ed;
@@ -114,49 +115,81 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .section-title {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   line-height: 1.15;
   font-size: 60px;
   font-weight: bolder;
-  margin: 100px 0 20px 0;
+  margin: 0 0 20px 0;
   width: 60%;
 }
+.section-title_theme_dark {
+  color: white;
+  z-index: 1;
+}
 .section-subtitle {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
   margin: 0;
   width: 60%;
 }
-/* card */
+.section-subtitle_theme_dark {
+  color: white;
+  z-index: 1;
+}
+/* cards */
 .table {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin: 0 auto 100px auto;
   width: 1100px;
+  margin:0 auto;
+}
+.table_theme_dark {
+  z-index: 1;
 }
 /* card styles */
 .table__cell {
   width: 250px;
   margin: 60px 0 0 0;
 }
+.table__cell_theme_dark {
+  width: 200px;
+  margin: 80px 0 0 0;
+}
+
+
+/* и элемента с модификатором вида ключ-значение */
+/* .table__cell_theme_dark {
+  width: 200px;
+  color: rgb(255, 10, 222);
+  margin-right: 0;
+  margin-top: 80px;
+} */
+
 .table__heading {
   line-height: 1.15;
   font-size: 24px;
   font-weight: bolder;
   margin: 0;
+
+}
+.table__heading_theme_dark {
+  color: white;
 }
 .table__text {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
   margin: 20px 0;
+}
+.table__text_theme_dark {
+  color: white;
 }
 .table__text:last-of-type {
   margin: 20px 0 0 0;
@@ -169,6 +202,7 @@
   align-items: center;
   background-color: #f2f2f2;
   height: 790px;
+  padding-top: 100px;
 }
 .feynman__main-illustration {
   background-image: url(../images/feynman.png);
@@ -184,7 +218,7 @@
   line-height: 1.15;
   font-size: 120px;
   font-weight: bolder;
-  margin: 100px 0 70px 0;
+  margin: 0;
   z-index: 1;
   width: 648px;
 }
@@ -193,7 +227,7 @@
   font-size: 36px;
   font-weight: normal;
   z-index: 1;
-  margin: 0;
+  margin: 70px 0 0 0;
 }
 .feynman-link {
   position: absolute;
@@ -205,14 +239,22 @@
   font-size: 36px;
   font-weight: normal;
 }
-
-
-
-
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
-  width: 200px;
-  color: rgb(255, 10, 222);
-  margin-right: 0;
-  margin-top: 80px;
+.kaufman {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1f1f1f;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  overflow: hidden;
+}
+.kaufman__triangle{
+  background-image: url(../images/kaufman-triangle.svg);
+  background-size: cover;
+  position: absolute;
+  width: 877px;
+  height: 877px;
+  right: -210px;
+  top: 0;
 }
