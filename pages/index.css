@@ -1,5 +1,6 @@
 @import "../vendor/normalize.css";
 @import "../blocks/page/page.css";
+@import "../blocks/rotation/rotation.css";
 @import "../blocks/header/header.css";
 @import "../blocks/logo/logo.css";
 @import "../blocks/logo/_place/logo_place_header.css";
@@ -50,3 +51,17 @@
 @import "../blocks/video/video.css";
 @import "../blocks/video/__iframes/video__iframes.css";
 @import "../blocks/video/__iframe/video__iframe.css";
+@import "../blocks/oakley/oakley.css";
+@import "../blocks/khan/khan.css";
+@import "../blocks/khan/__container/khan__container.css";
+@import "../blocks/khan/__author/khan__author.css";
+@import "../blocks/khan/__title/khan__title.css";
+@import "../blocks/khan/__quote/khan__quote.css";
+@import "../blocks/khan/__quote-author/khan__quote-author.css";
+@import "../blocks/khan/__quote-author-subline/khan__quote-author-subline.css";
+@import "../blocks/khan/__book-container/khan__book-container.css";
+@import "../blocks/khan/__book-pic/khan__book-pic.css";
+@import "../blocks/khan/__buy-link/khan__buy-link.css";
+@import "../blocks/resources/resources.css";
+@import "../blocks/resources/__logo-zone/resources__logo-zone.css";
+@import "../blocks/resources/__logo/resources__logo.css";
